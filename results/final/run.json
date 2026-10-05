@@ -1,0 +1,21 @@
+{
+  "task": "Single test evaluation with the model and thresholds frozen on validation",
+  "model": "xgboost_balanced",
+  "thresholds": {
+    "1": 0.04889063909649849,
+    "5": 0.04889063909649849,
+    "10": 0.04889063909649849,
+    "25": 0.9887111186981201
+  },
+  "headline_review_cost": 5.0,
+  "seed": 42,
+  "n_bootstrap": 1000,
+  "bootstrap_draws_used": 1000,
+  "versions": {
+    "python": "3.12.5",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.4.1"
+  }
+}

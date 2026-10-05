@@ -1,0 +1,83 @@
+{
+  "task": "Model comparison on the chronological validation split; the test split is not scored",
+  "seed": 42,
+  "threads": 4,
+  "n_bootstrap": 1000,
+  "bootstrap_draws_used": 1000,
+  "rows_after_deduplication": 283726,
+  "duplicates_removed": 1081,
+  "features": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount"
+  ],
+  "split_fractions": {
+    "train": 0.6,
+    "validation": 0.2
+  },
+  "split_cut_times_seconds": [
+    120393.0,
+    145234.0
+  ],
+  "splits": [
+    {
+      "split": "train",
+      "rows": 170235,
+      "frauds": 342,
+      "fraud_rate": 0.002008987575997885,
+      "start_hour": 0.0,
+      "end_hour": 33.44
+    },
+    {
+      "split": "validation",
+      "rows": 56745,
+      "frauds": 57,
+      "fraud_rate": 0.0010044937879989425,
+      "start_hour": 33.44,
+      "end_hour": 40.34
+    },
+    {
+      "split": "test",
+      "rows": 56746,
+      "frauds": 74,
+      "fraud_rate": 0.0013040566735981391,
+      "start_hour": 40.34,
+      "end_hour": 48.0
+    }
+  ],
+  "best_validation_model": "xgboost_balanced",
+  "average_precision": "sklearn average_precision_score (step-wise, not trapezoidal)",
+  "versions": {
+    "python": "3.12.5",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.4.1"
+  }
+}

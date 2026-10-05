@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fraud-detection"
+version = "0.1.0"
+description = "Credit-card fraud detection with a chronological evaluation, baselines and cost-based thresholds"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "Markos Pantelis"}]
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "scikit-learn>=1.4,<2", "xgboost>=1.7.6,<4", "matplotlib>=3.8,<4"]
+
+[tool.setuptools.packages.find]
+include = ["fraud_ml*"]
